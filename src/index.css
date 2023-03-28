@@ -1,13 +1,170 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+  list-style-type: none; 
+}
+
+.nav {
+  background-color: #1b91ac;
+  color: #fff;
+  display: flow-root;
+  padding: .7rem;
+}
+
+.nav-title {
+  float: left;
+  margin-left: 3rem;
+}
+
+.nav .a {
+  text-decoration: none;
+}
+
+.nav-title h2 {
+  font-size: 1.5rem;
+}
+
+.nav-total h2 {
+  font-size: 1.5rem;
+}
+
+.nav-total span {
+  margin-right: 1rem;
+}
+
+.nav h2:hover {
+  cursor: pointer;
+}
+
+.nav-total {
+  float: right;
+  margin-right: 6rem;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+  background-image: url("./assets/img/header-background.jpg");
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  gap: .5rem;
+}
+
+.header-text h1 {
+  font-size: 3rem;
+}
+
+.header .header-text hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: .3;
+  margin-top: .5rem;
+}
+
+.row-home {
+  margin-top: 4rem;
+}
+
+.home-card {
+  width: 18rem;
+  margin-bottom: 2rem;
+}
+
+.price-home {
+  text-align: center;
+  padding: 1rem;
+}
+
+.buttons-home {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-home button {
+  margin: 0.5rem
+}
+
+.bottom-detail {
+  display: flex;
+}
+
+.bottom-detail button {
+  margin-left: 25rem
+}
+
+.row-detalle{
+  padding: 0;
+  margin: 0;
+}
+
+.row-detalle .col{
+  margin:0;
+  padding: 0;
+}
+
+.row-detalle .col img{
+  width: 95%;
+}
+
+.row-detalle .col .card{
+  margin:0;
+  padding: 0;
+}
+
+
+
+.carrito-info {
+  margin: auto;
+  width: 95%;
+}
+
+.row-carrito{
+  justify-content: center;
+  align-items: center;
+}
+
+.row-carrito hr{
+  width: 95%;
+  margin-top: 1rem;
+}
+
+.pizza-carrito {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+
+.carrito-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrito-cantidad {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.pay-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
